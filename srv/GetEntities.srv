@@ -1,0 +1,12 @@
+# Get objects in the scene which can be interacted, e.g. with using SetEntityState.
+
+string filter                                       # Optional, defaults to empty. Return entities with matching names.
+                                                    # Entity names are matched with the filter regular expression.
+                                                    # An empty filter will result in all entities being returned.
+
+---
+
+EntityWithState[] entities                          # All entities with their states, matching the filter.
+
+bool success                                        # Return true if successful.
+string status_message                               # Additional comments or error status.
